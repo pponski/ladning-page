@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html{
+    scroll-behavior: smooth;
+    @apply bg-bgdark
+}
+
+section{
+    @apply py-10 text-center xl:py-[100px]
+}
+
+
+.background::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+    background: url('/headerbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.container{
+    @apply max-w-[1200px] mx-auto my-0
+}
+
+/* HEADER AND NAVBARS */
+
+.nav-item{
+    @apply w-full block py-6 text-center cursor-pointer
+}
+
+.desktop-item{
+    @apply py-8 px-6 text-base font-light cursor-pointer block hover:text-primary hover:translate-y-[-2px] duration-300 
+}
+
+.background{
+    background-color: rgba(0,0,0,0.6);
+    position: relative;
+}
+
+.btn-primary{
+    @apply mx-auto my-4 bg-primary border-2 border-primary text-white rounded-full px-8 xl:px-10 py-3 text-xs block xl:hover:border-2 xl:hover:bg-transparent xl:hover:text-primary xl:hover:translate-y-[-5px] xl:duration-300
+}
+
+.btn-secondary{
+    @apply mx-auto my-4 border-2 border-primary text-primary rounded-full px-6 xl:px-10 py-2 text-xs block xl:hover:bg-primary xl:hover:text-white xl:hover:translate-y-[-5px] duration-300
+}
+
+
+/* ABOUT */
+
+.about-item{
+    @apply text-white flex flex-col items-center py-8 cursor-pointer xl:hover:scale-105 xl:hover:translate-y-[-10px] duration-300 
+}
+
+.about-icon{
+    @apply text-primary text-5xl xl:text-6xl mb-3 xl:mb-4
+}
+
+.about-title{
+    @apply font-bold text-base xl:text-xl pb-3 xl:pb-6
+}
+
+.about-description{
+    @apply font-light text-sm xl:text-base px-8 w-[300px] xl:w-[350px]
+}
