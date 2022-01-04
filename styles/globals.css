@@ -4,12 +4,11 @@
 
 
 html{
-    scroll-behavior: smooth;
     @apply bg-bgdark
 }
 
 section{
-    @apply py-10 text-center xl:py-[100px]
+    @apply py-10 text-center xl:py-20
 }
 
 
@@ -59,7 +58,7 @@ section{
 /* ABOUT */
 
 .about-item{
-    @apply text-white flex flex-col items-center py-8 cursor-pointer xl:hover:scale-105 xl:hover:translate-y-[-10px] duration-300 
+    @apply text-white flex flex-col items-center pt-8 cursor-pointer xl:hover:scale-105 xl:hover:translate-y-[-10px] duration-300
 }
 
 .about-icon{

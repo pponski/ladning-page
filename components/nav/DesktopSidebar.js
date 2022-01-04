@@ -9,19 +9,19 @@ const DesktopSidebar = () => {
                 <nav className='h-[full]'>
                     <ul className='flex'>
                         <li>
-                            <Link to="about" className='desktop-item'>About</Link>
+                            <Link spy={true} smooth={true} duration={500} to="about" className='desktop-item'>About</Link>
                         </li>
                         <li>
-                            <Link to="testimonials" className='desktop-item'>Testimonials</Link>
+                            <Link spy={true} smooth={true} duration={800} to="testimonials" className='desktop-item'>Testimonials</Link>
                         </li>
                         <li>
-                            <Link to="projects" className='desktop-item'>Projects</Link>
+                            <Link spy={true} smooth={true} duration={900} to="projects" className='desktop-item'>Projects</Link>
                         </li>
                         <li>
-                            <Link to="pricing" className='desktop-item'>Pricing</Link>
+                            <Link spy={true} smooth={true} duration={1000} to="pricing" className='desktop-item'>Pricing</Link>
                         </li>
                         <li>
-                            <Link to="contact" className='desktop-item'>Contact</Link>
+                            <Link spy={true} smooth={true} duration={1100} to="contact" className='desktop-item'>Contact</Link>
                         </li>
                     </ul>
                 </nav>
