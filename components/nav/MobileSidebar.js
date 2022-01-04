@@ -21,19 +21,19 @@ const MobileSidebar = () => {
                 <nav className={`absolute left-0 right-0 z-10  ${isOpen ? 'top-[54px]' : 'top-[-500px]'} bg-bgdark linear duration-300 flex items-center justify-center py-5`}>
                             <ul>
                                 <li>
-                                    <Link onClick={handleClick} to="about" className='nav-item'>About</Link>
+                                    <Link spy={true} smooth={true} duration={500}  onClick={handleClick} to="about" className='nav-item'>About</Link>
                                 </li>
                                 <li>
-                                    <Link onClick={handleClick} to="testimonials" className='nav-item'>Testimonials</Link>
+                                    <Link spy={true} smooth={true} duration={800}  onClick={handleClick} to="testimonials" className='nav-item'>Testimonials</Link>
                                 </li>
                                 <li>
-                                    <Link onClick={handleClick} to="projects" className='nav-item'>Projects</Link>
+                                    <Link spy={true} smooth={true} duration={900}  onClick={handleClick} to="projects" className='nav-item'>Projects</Link>
                                 </li>
                                 <li>
-                                    <Link onClick={handleClick} to="pricing" className='nav-item'>Pricing</Link>
+                                    <Link spy={true} smooth={true} duration={1000}  onClick={handleClick} to="pricing" className='nav-item'>Pricing</Link>
                                 </li>
                                 <li>
-                                    <Link onClick={handleClick} to="contact" className='nav-item'>Contact</Link>
+                                    <Link spy={true} smooth={true} duration={1100}  onClick={handleClick} to="contact" className='nav-item'>Contact</Link>
                                 </li>
                             </ul>
                 </nav>
