@@ -47,7 +47,7 @@ section{
 }
 
 .btn-primary{
-    @apply mx-auto my-4 bg-primary border-2 border-primary text-white rounded-full px-8 xl:px-10 py-3 text-xs block xl:hover:border-2 xl:hover:bg-transparent xl:hover:text-primary xl:hover:translate-y-[-5px] xl:duration-300
+    @apply mx-auto my-4 bg-primary border-2 border-primary text-white rounded-full px-8 xl:px-10 py-2 text-xs block xl:hover:border-2 xl:hover:bg-transparent xl:hover:text-primary xl:hover:translate-y-[-5px] xl:duration-300
 }
 
 .btn-secondary{
@@ -71,4 +71,14 @@ section{
 
 .about-description{
     @apply font-light text-sm xl:text-base px-8 w-[300px] xl:w-[350px]
+}
+
+
+/* PROJECT */
+
+.project-bg{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: content-box;
 }

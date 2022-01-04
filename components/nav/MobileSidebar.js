@@ -18,7 +18,7 @@ const MobileSidebar = () => {
             <button onClick={handleClick} className='py-1 text-3xl z-[100]'>
                 {isOpen ? <IoMdClose/> : <BiMenuAltRight/>} 
             </button>
-                <nav className={`absolute left-0 right-0 z-10  ${isOpen ? 'top-[54px]' : 'top-[-500px]'} bg-bgdark linear duration-300 flex items-center justify-center py-5`}>
+                <nav className={`absolute left-0 right-0 z-10  ${isOpen ? 'top-[54px]' : 'top-[-500px]'} bg-bgdark linear duration-[0.8s] flex items-center justify-center py-5`}>
                             <ul>
                                 <li>
                                     <Link spy={true} smooth={true} duration={500}  onClick={handleClick} to="about" className='nav-item'>About</Link>
