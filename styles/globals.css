@@ -80,5 +80,21 @@ section{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-clip: content-box;
+}
+
+
+/* CONTACT */
+.contact-label{
+    @apply border-[1px] mb-4 rounded-md shadow-md border-gray-400 p-2 text-graytext
+}
+
+
+/* FOOTER */
+
+.footer-heading{
+    @apply font-bold text-base xl:text-lg pb-4
+}
+
+.footer-item{
+    @apply py-1 font-light text-sm xl:text-base xl:hover:text-primary duration-300 cursor-pointer
 }

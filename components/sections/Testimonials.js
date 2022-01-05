@@ -1,10 +1,17 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 // components
 import ClientCard from '../utils/ClientCard'
 import SectionHeading from '../utils/SectionHeading'
 
 
 const Testimonials = () => {
+
+    useEffect(() => {
+        Aos.init();
+    }, []);
+
     return (
         <section id='testimonials' className='bg-bglight'>
             <SectionHeading 
@@ -12,7 +19,7 @@ const Testimonials = () => {
                 description='Problems trying to resolve the conflict between 
                 he two major realms of Classical physics: Newtonian mechanics...'
             />
-            <div className='w-[85%] shadow-sm mx-auto md:flex md:my-6'>
+            <div data-aos="zoom-in" data-aos-duration='1500' data-aos-delay='700' className='w-[85%] shadow-sm mx-auto md:flex md:my-6'>
                 <ClientCard
                     image={'/man.jpg'}
                     job='Developer'

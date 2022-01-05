@@ -1,9 +1,16 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import { Link } from 'react-scroll'
 
 const DesktopSidebar = () => {
+
+    useEffect(() => {
+        Aos.init()
+    }, []);
+
     return (
-        <div className="hidden xl:block absolute left-0 right-0 z-10">
+        <div data-aos="fade-down" data-aos-duration='1000' data-aos-delay='700' className="hidden xl:block absolute left-0 right-0 z-10">
             <div className="container text-white flex justify-between items-center">
                 <p className='font-black z-[100] text-2xl'>BrandName</p>
                 <nav className='h-[full]'>
